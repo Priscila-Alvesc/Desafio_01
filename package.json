@@ -3,5 +3,10 @@
     "express": "^5.1.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "chai": "^5.2.1",
+    "sinon": "^21.0.0",
+    "supertest": "^7.1.4"
   }
 }
