@@ -2,32 +2,7 @@ const express = require('express');
 const router = express.Router();
 const userService = require('../service/userService');
 
-/**
- * @swagger
- * /register:
- *   post:
- *     summary: Cadastro de usuário
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               username:
- *                 type: string
- *               password:
- *                 type: string
- *               name:
- *                 type: string
- *               email:
- *                 type: string
- *     responses:
- *       200:
- *         description: Usuário cadastrado
- *       400:
- *         description: Usuário já existe
- */
+
 router.post('/register', (req, res) => {
   const result = userService.registerUser(req.body);
   if (result.error) return res.status(400).json(result);
