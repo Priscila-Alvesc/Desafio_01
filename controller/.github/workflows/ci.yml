@@ -1,4 +1,4 @@
-name: Pipe N1
+name: "Pipe N1"
 
 on:
   workflow_dispatch:  # Permite execução manual
