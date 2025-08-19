@@ -65,6 +65,10 @@ describe('User Cntroller', () => {
     });
     
     describe('GET /user/:username', () => {
+        afterEach(() => {
+        sinon.restore();
+        });
+
       it('Quando consulto um usuário não cadastrado recebo 404', async () => {
         const fakerUserNotExist = {
           username: 'Jose',
