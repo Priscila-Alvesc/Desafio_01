@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "test": "mocha test/**/*.js"
+  },
+  "license": "MIT",
   "dependencies": {
     "express": "^5.1.0",
     "swagger-jsdoc": "^6.2.8",
@@ -6,6 +10,7 @@
   },
   "devDependencies": {
     "chai": "^5.2.1",
+    "mocha": "^10.8.2",
     "sinon": "^21.0.0",
     "supertest": "^7.1.4"
   }
