@@ -23,16 +23,8 @@ function getUser(username) {
   return { user };
 }
 
-function deleteUser(username) {
-  const idx = users.findIndex(u => u.username === username);
-  if (idx === -1) return { error: 'Usuário não encontrado' };
-  users.splice(idx, 1);
-  return { success: true };
-}
-
 module.exports = {
   registerUser,
   loginUser,
-  getUser,
-  deleteUser
+  getUser
 };
